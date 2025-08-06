@@ -1,3 +1,4 @@
+/* Core layout */
 * {
   margin: 0;
   padding: 0;
@@ -15,54 +16,51 @@ header {
   border-bottom: 1px solid #333;
 }
 
-/* Hieroglyphic Symbol Container */
+/* Great House Symbol */
 .symbol-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #000;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   position: relative;
 }
 
-/* Great House Frame */
-.horseshoe-frame {
+.great-house-frame {
   position: relative;
-  display: inline-block;
   padding: 2rem 4rem;
   border-top: 6px solid #00f2ff;
   border-left: 6px solid #00f2ff;
   border-right: 6px solid #00f2ff;
 }
 
-/* Bottom arms — extend inward from both sides */
-.horseshoe-frame::before,
-.horseshoe-frame::after {
+/* Bottom arms */
+.great-house-frame::before,
+.great-house-frame::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   width: 60px;
   height: 6px;
   background-color: #00f2ff;
 }
 
-/* Left bottom arm */
-.horseshoe-frame::before {
+.great-house-frame::before {
   left: 0;
 }
 
-/* Right bottom arm */
-.horseshoe-frame::after {
+.great-house-frame::after {
   right: 0;
 }
 
+/* Text inside the symbol */
 .brand-name {
   font-size: 1.75rem;
   font-weight: 600;
   color: #00f2ff;
   text-transform: uppercase;
   text-align: center;
+  display: block;
 }
 
 /* Acronym bar */
@@ -78,17 +76,12 @@ header {
   letter-spacing: 0.5px;
 }
 
-.acronym-bar span {
-  border-bottom: 2px solid transparent;
-  padding-bottom: 0.2rem;
-  transition: border-color 0.3s ease;
-}
-
 .acronym-bar span:hover {
-  border-color: #00f2ff;
+  border-bottom: 2px solid #00f2ff;
   color: #00f2ff;
 }
 
+/* Rest of page styles */
 .hero {
   padding: 4rem 2rem;
   text-align: center;
