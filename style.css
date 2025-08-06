@@ -1,0 +1,101 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00f2ff;
+}
+
+nav a {
+  margin-left: 2rem;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #00f2ff;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #181818;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00f2ff;
+}
+
+.section p {
+  color: #ddd;
+}
+
+.section.dark {
+  background: #1d1d1d;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #00f2ff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #00cce6;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
