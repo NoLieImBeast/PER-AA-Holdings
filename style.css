@@ -22,4 +22,131 @@ header {
   align-items: center;
   background-color: #000;
   padding-top: 3rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
 
+/* Great House Frame */
+.horseshoe-frame {
+  position: relative;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-top: 6px solid #00f2ff;
+  border-left: 6px solid #00f2ff;
+  border-right: 6px solid #00f2ff;
+}
+
+/* Bottom arms — extend inward from both sides */
+.horseshoe-frame::before,
+.horseshoe-frame::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 6px;
+  background-color: #00f2ff;
+}
+
+/* Left bottom arm */
+.horseshoe-frame::before {
+  left: 0;
+}
+
+/* Right bottom arm */
+.horseshoe-frame::after {
+  right: 0;
+}
+
+.brand-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #00f2ff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Acronym bar */
+.acronym-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #181818;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  color: #ccc;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.acronym-bar span {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
+  transition: border-color 0.3s ease;
+}
+
+.acronym-bar span:hover {
+  border-color: #00f2ff;
+  color: #00f2ff;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #181818;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00f2ff;
+}
+
+.section p {
+  color: #ddd;
+}
+
+.section.dark {
+  background: #1d1d1d;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #00f2ff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #00cce6;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
