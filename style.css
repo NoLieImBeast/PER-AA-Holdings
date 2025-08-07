@@ -38,7 +38,7 @@ header {
 .great-house-frame::after {
   content: "";
   position: absolute;
-  bottom: -6px;
+  bottom: 0;
   width: 60px;
   height: 6px;
   background-color: #00f2ff;
