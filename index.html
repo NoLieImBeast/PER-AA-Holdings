@@ -7,37 +7,66 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Baskerville&display=swap" rel="stylesheet" />
   <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .brand-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .acronym-bar {
+      font-size: 0.75rem;
+      color: #777;
+      letter-spacing: 0.05em;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
     .hero h1 {
       font-family: 'Libre Baskerville', serif;
       font-size: 2.8rem;
-      text-align: center;
-      margin: 2rem 0 1rem 0;
+      margin-bottom: 1rem;
     }
 
     .hero p {
-      color: #777;
-      text-align: center;
+      color: #666;
       font-size: 1.1rem;
       max-width: 700px;
       margin: 0 auto 3rem auto;
     }
 
     .section {
-      padding: 3rem 1rem;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .section.dark {
-      background-color: #f4f4f4;
-    }
-
-    .brand-name {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    .acronym-bar span {
-      margin-right: 1rem;
-      font-weight: 400;
+      background-color: #f5f5f5;
     }
 
     footer {
@@ -51,17 +80,15 @@
 <body>
 
   <header>
-    <div class="symbol-container">
-      <div class="great-house-frame">
-        <span class="brand-name">Per-AA Holdings</span>
+    <div class="brand-left">
+      <span class="brand-name">Per-AA Holdings</span>
+      <div class="acronym-bar">
+        <span>Performance</span>
+        <span>Engineering</span>
+        <span>Research</span>
+        <span>Advanced Analytics</span>
       </div>
     </div>
-    <nav class="acronym-bar">
-      <span>Performance</span>
-      <span>Engineering</span>
-      <span>Research</span>
-      <span>Advanced Analytics</span>
-    </nav>
   </header>
 
   <main>
@@ -93,3 +120,4 @@
 
 </body>
 </html>
+
