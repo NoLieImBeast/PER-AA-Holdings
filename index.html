@@ -6,107 +6,48 @@
   <title>PERAA Holdings</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Baskerville&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: #111;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.2rem 2rem;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .brand-left {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-name {
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-
-    .acronym-bar {
-      font-size: 0.75rem;
-      color: #777;
-      letter-spacing: 0.05em;
-      display: flex;
-      gap: 0.75rem;
-    }
-
-    .hero {
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      color: #666;
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 3rem auto;
-    }
-
-    .section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .section.dark {
-      background-color: #f5f5f5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
 
-  <header>
+  <!-- Header: predictable, top-left brand lockup -->
+  <header class="site-header">
     <div class="brand-left">
       <div class="great-house-frame">
-      <span class="brand-name">PERAA Holdings</span>
+        <span class="brand-name">PERAA Holdings</span>
       </div>
-      <div class="acronym-bar">
+      <nav class="acronym-bar" aria-label="Acronym">
         <span>Performance</span>
         <span>Engineering</span>
         <span>Research</span>
         <span>Advanced Analytics</span>
-      </div>
+      </nav>
     </div>
   </header>
 
+  <!-- Hero: white space + single, heavy statement -->
   <main>
     <section class="hero">
       <h1>Where Ideas Become Infrastructure</h1>
-      <p>A privately held company focused on long-term structure, layered growth, and strategic autonomy.</p>
+      <p class="hero-sub">
+        A privately held company focused on long-term structure, layered growth, and strategic autonomy.
+      </p>
     </section>
 
+    <!-- Body sections: simple, scannable -->
     <section id="about" class="section">
-      <h2>About Us</h2>
-      <p>PERAA Holdings exists to build, protect, and scale a diverse portfolio of independent ventures. Each business is structured intentionally for resilience and longevity, not flash or hype.</p>
+      <h2>About</h2>
+      <p>
+        PERAA Holdings builds, protects, and scales a portfolio of independent ventures. Each company is structured
+        for resilience and longevity—never flash for its own sake.
+      </p>
     </section>
 
-    <section id="vision" class="section dark">
-      <h2>Our Vision</h2>
-      <p>From blueprint to buildout, every move is structured for scale and resilience. Open to aligned partnerships — whether capital-first or performance-driven.</p>
+    <section id="vision" class="section section-dark">
+      <h2>Approach</h2>
+      <p>
+        From blueprint to buildout, every move is structured for scale and resilience. Open to aligned partnerships—
+        whether capital-first or performance-driven.
+      </p>
     </section>
 
     <section id="contact" class="section">
@@ -116,10 +57,9 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 PERAA Holdings. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
