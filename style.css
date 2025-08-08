@@ -16,18 +16,11 @@ header {
 }
 
 /* Great House Symbol */
-.symbol-container {
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  padding-top: 3rem;
-  padding-bottom: 2.5rem;
-  position: relative;
-}
+
 
 .great-house-frame {
   position: relative;
-  padding: 2rem 4rem;
+  padding: 1.2rem 2.5rem;
   border-top: 6px solid #00f2ff;
   border-left: 6px solid #00f2ff;
   border-right: 6px solid #00f2ff;
@@ -60,19 +53,16 @@ header {
   text-align: center;
   display: block;
 }
-.brand-frame {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.35rem 0.9rem;
-  border: 1.5px solid #00f2ff;
-  border-radius: 9999px;
-  line-height: 1;
-}
+
 .brand-left {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  align-items: flex start;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.great-house-frame {
+  display: inline-block;
 }
 .brand-name {
   margin: 0;
@@ -80,14 +70,14 @@ header {
 
 .acronym-bar {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background-color: #181818;
-  padding: 0.75rem 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: transparent;
+  padding: 0;
   font-weight: 500;
   color: #ccc;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
 }
 
 .acronym-bar span:hover {
