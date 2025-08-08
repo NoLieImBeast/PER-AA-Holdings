@@ -69,6 +69,14 @@ header {
   border-radius: 9999px;
   line-height: 1;
 }
+.brand-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.brand-name {
+  margin: 0;
+}
 
 .acronym-bar {
   display: flex;
