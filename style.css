@@ -60,6 +60,15 @@ header {
   text-align: center;
   display: block;
 }
+.brand-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  border: 1.5px solid #00f2ff;
+  border-radius: 9999px;
+  line-height: 1;
+}
 
 .acronym-bar {
   display: flex;
