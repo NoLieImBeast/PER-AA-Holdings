@@ -23,7 +23,7 @@ body {
 /* ===== Header ===== */
 .site-header {
   border-bottom: 1px solid var(--rule);
-  border-color: #B87333;
+  
   padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
@@ -42,9 +42,9 @@ body {
   position: relative;
   display: inline-block;        /* shrink-wrap around text */
   padding: 1.2rem 2.5rem;       /* tighter for top-left lockup */
-  border-top: 6px solid var(--accent);
-  border-left: 6px solid var(--accent);
-  border-right: 6px solid var(--accent);
+  border-top: 6px solid #b87333;
+  border-left: 6px solid #b87333;
+  border-right: 6px solid #b87333;
 }
 
 /* Bottom arms */
@@ -55,7 +55,7 @@ body {
   bottom: 0;
   width: 60px;
   height: 6px;
-  background-color: var(--accent);
+  background-color: #b87333;
 }
 .great-house-frame::before { left: 0; }
 .great-house-frame::after  { right: 0; }
