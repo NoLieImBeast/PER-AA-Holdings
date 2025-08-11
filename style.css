@@ -103,22 +103,26 @@ header { border-bottom: 0 !important; }
 }
 
 .hero h1 {
+  .hero h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.005em;
-  color: #FFFFFF; /* pure white text */
+  color: #FFFFFF;             /* pure white text */
   margin-bottom: 0.75rem;
   padding: 1rem 1.5rem;
-  
-  /* Vertical mirrored fade into black */
+  display: inline-block;      /* background hugs the text */
+
+  /* Black in the middle, fade to transparent top & bottom */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1) 0%,       /* solid black top edge */
-    rgba(0, 0, 0, 0) 35%,      /* fade to transparent middle */
-    rgba(0, 0, 0, 0) 65%,      /* stay transparent around center */
-    rgba(0, 0, 0, 1) 100%      /* solid black bottom edge */
+    rgba(0,0,0,0)   0%,   /* transparent at top edge */
+    rgba(0,0,0,0.85) 40%, /* fade into near-black */
+    rgba(0,0,0,0.85) 60%, /* hold black through the center band */
+    rgba(0,0,0,0)  100%   /* transparent at bottom edge */
   );
+}
+
   
   border-radius: 6px;
 }
