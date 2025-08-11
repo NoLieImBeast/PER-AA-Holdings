@@ -111,13 +111,11 @@ header { border-bottom: 0 !important; }
   margin-bottom: 0.75rem;
 }
 
-/* Gradient sits on the span so it hugs the words */
-.hero-fade {
+/* Gradient BORDER wrapper */
+.hero-border {
   display: inline-block;
-  padding: 1rem 1.5rem;
-  border-radius: 6px;
-
-  /* Black center, fading to transparent at top and bottom (vertical, mirrored) */
+  padding: 2px;                 /* border thickness */
+  border-radius: 8px;           /* outer radius */
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0)   0%,
@@ -127,12 +125,22 @@ header { border-bottom: 0 !important; }
   );
 }
 
+/* Inner fill (hunter green) */
+.hero-fade {
+  display: block;
+  padding: 1rem 1.5rem;         /* space around the text */
+  border-radius: 6px;
+  background: var(--bg);        /* match page background */
+  color: inherit;
+}
+
 .hero-sub {
   max-width: 720px;
   margin: 0 auto;
   color: #FAEBD7;              /* Antique White subtext */
   font-size: clamp(1rem, 2.2vw, 1.125rem);
 }
+
 
 
 /* ===== Sections ===== */
