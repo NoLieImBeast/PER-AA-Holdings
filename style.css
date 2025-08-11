@@ -2,13 +2,13 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root{
-  --bg: #355E3B;
-  --bg-2: #2E4F33;
-  --text: #FAEBD7;
-  --muted: #FAEBD7;
+  --bg: #355E3B;      /* Hunter green */
+  --bg-2: #2E4F33;    /* Darker hunter for section breaks */
+  --text: #FAEBD7;    /* Antique White (site-wide default text) */
+  --muted: #FAEBD7;   /* keep muted = Antique White */
   --muted-2: #8a8a8a;
-  --accent: #B87333;
-  --rule: #2A4A30;
+  --accent: #B87333;  /* Copper */
+  --rule: #2A4A30;    /* Subtle divider */
 }
 
 html, body { height: 100%; }
@@ -16,13 +16,14 @@ html, body { height: 100%; }
 body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
-  color: var(--text);
+  color: var(--text);        /* Antique White everywhere (except header overrides below) */
   line-height: 1.6;
 }
 
 /* ===== Header ===== */
 .site-header {
-  border-bottom: none; 
+  border-bottom: 1px solid var(--rule);  /* keep the thin rule as “back like this” */
+  background: var(--bg);                 /* match body so no shade mismatch */
   padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
@@ -36,14 +37,14 @@ body {
   gap: 0.5rem;          /* spacing between frame and acronym */
 }
 
-/* === Hieroglyph / Great House Frame (Egyptian cartouche vibe) === */
+/* === Hieroglyph / Great House Frame === */
 .great-house-frame {
   position: relative;
   display: inline-block;        /* shrink-wrap around text */
   padding: 1.2rem 2.5rem;       /* tighter for top-left lockup */
-  border-top: 6px solid #b87333;
-  border-left: 6px solid #b87333;
-  border-right: 6px solid #b87333;
+  border-top: 6px solid var(--accent);
+  border-left: 6px solid var(--accent);
+  border-right: 6px solid var(--accent);
 }
 
 /* Bottom arms */
@@ -54,49 +55,49 @@ body {
   bottom: 0;
   width: 60px;
   height: 6px;
-  background-color: #b87333;
+  background-color: var(--accent);
 }
 .great-house-frame::before { left: 0; }
 .great-house-frame::after  { right: 0; }
 
-/* Brand text inside frame */
+/* Brand text inside frame (HEADER stays copper) */
 .brand-name {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #B87333;
+  color: var(--accent);        /* Copper */
   text-transform: uppercase;
   text-align: center;
   display: block;
-  
 }
 
-/* Acronym line (left, no full-width bar) */
+/* Acronym line (HEADER stays copper) */
 .acronym-bar {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
   background: transparent;
   padding: 0;
-  color: var(--muted);
+  color: var(--accent);        /* Copper at rest (not Antique White) */
   font-size: 0.85rem;
   letter-spacing: 0.05rem;
 }
 .acronym-bar span {
   line-height: 1.2;
   padding-bottom: 2px;          /* room for hover underline */
-  transition: color .2s ease, border-color .2s ease;
+  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
 }
 .acronym-bar span:hover {
-  border-bottom: 2px solid #B87333;
-  color: #B87333;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  background-color: rgba(184,115,51,0.12);
+  border-radius: 4px;
 }
 
 /* ===== Hero ===== */
 .hero {
-  background: var(--bg);
-  border-top: 1px solid var(--bg)
+  background: var(--bg);       /* full hunter green hero */
   text-align: center;
-  padding: 6rem 1.25rem;        /* big whitespace for “luxury” perception */
+  padding: 6rem 1.25rem;       /* luxury whitespace */
 }
 
 .hero h1 {
@@ -104,14 +105,14 @@ body {
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.005em;
-  color: #ffffff;
+  color: #FFFFFF;              /* PURE WHITE headline */
   margin-bottom: 0.75rem;
 }
 
 .hero-sub {
   max-width: 720px;
   margin: 0 auto;
-  color: #FAEBD7;
+  color: #FAEBD7;              /* Antique White subtext */
   font-size: clamp(1rem, 2.2vw, 1.125rem);
 }
 
@@ -123,14 +124,20 @@ body {
 }
 
 .section-dark {
-  background: var(--bg-2);
+  background: var(--bg-2);     /* darker hunter break */
 }
 
 .section h2 {
   font-size: 1.35rem;
   margin-bottom: 0.75rem;
-  color: var(--accent);
+  color: var(--accent);        /* Copper headings */
 }
+
+.section p {
+  color: #FAEBD7;              /* Antique White body text */
+}
+
+/* Buttons (if used) */
 .button {
   background: var(--accent);
   color: #000;
@@ -139,17 +146,13 @@ body {
   background: #a16128;
 }
 
-.section p {
-  color: #ddd;
-}
-
 /* ===== Footer ===== */
 .site-footer {
-  background: #203C2A;
+  background: #203C2A;         /* deep hunter */
   text-align: center;
   padding: 2rem 1.25rem;
   font-size: 0.9rem;
-  color: #B7C4B7;
+  color: #B7C4B7;              /* softened footer text */
 }
 
 /* ===== Responsive polish ===== */
