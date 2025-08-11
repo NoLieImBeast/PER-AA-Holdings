@@ -112,7 +112,7 @@ header { border-bottom: 0 !important; }
   margin-bottom: 0.75rem;
   padding: 1rem 1.5rem;
   display: inline-block;      /* background hugs the text */
-
+border-radius: 6px;
   /* Black in the middle, fade to transparent top & bottom */
   background: linear-gradient(
     to bottom,
