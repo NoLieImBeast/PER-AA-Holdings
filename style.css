@@ -97,38 +97,27 @@ header { border-bottom: 0 !important; }
 
 /* ===== Hero ===== */
 .hero {
-  background: var(--bg);       /* full hunter green hero */
+  background: var(--bg);       /* full hunter green */
   text-align: center;
   padding: 6rem 1.25rem;       /* luxury whitespace */
 }
 
 .hero h1 {
-  .hero h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.005em;
-  color: #FFFFFF;             /* pure white text */
+  color: #FFFFFF;              /* pure white text */
   margin-bottom: 0.75rem;
-  padding: 1rem 1.5rem;
-  display: inline-block;      /* background hugs the text */
-border-radius: 6px;
-  /* Black in the middle, fade to transparent top & bottom */
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0)   0%,   /* transparent at top edge */
-    rgba(0,0,0,0.85) 40%, /* fade into near-black */
-    rgba(0,0,0,0.85) 60%, /* hold black through the center band */
-    rgba(0,0,0,0)  100%   /* transparent at bottom edge */
-  );
 }
-.hero h1 { color:#FFFFFF; } /* keep pure white text */
 
+/* Gradient sits on the span so it hugs the words */
 .hero-fade {
-  display: inline-block;           /* background hugs the text */
+  display: inline-block;
   padding: 1rem 1.5rem;
   border-radius: 6px;
-  /* Black center, transparent top/bottom (vertical, mirrored) */
+
+  /* Black center, fading to transparent at top and bottom (vertical, mirrored) */
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0)   0%,
@@ -138,17 +127,13 @@ border-radius: 6px;
   );
 }
 
-  
-  border-radius: 6px;
-}
-
-
 .hero-sub {
   max-width: 720px;
   margin: 0 auto;
   color: #FAEBD7;              /* Antique White subtext */
   font-size: clamp(1rem, 2.2vw, 1.125rem);
 }
+
 
 /* ===== Sections ===== */
 .section {
