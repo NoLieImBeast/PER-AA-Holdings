@@ -107,9 +107,22 @@ header { border-bottom: 0 !important; }
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.005em;
-  color: #FFFFFF;              /* PURE WHITE headline */
+  color: #FFFFFF; /* pure white text */
   margin-bottom: 0.75rem;
+  padding: 1rem 1.5rem;
+  
+  /* Vertical mirrored fade into black */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,       /* solid black top edge */
+    rgba(0, 0, 0, 0) 35%,      /* fade to transparent middle */
+    rgba(0, 0, 0, 0) 65%,      /* stay transparent around center */
+    rgba(0, 0, 0, 1) 100%      /* solid black bottom edge */
+  );
+  
+  border-radius: 6px;
 }
+
 
 .hero-sub {
   max-width: 720px;
