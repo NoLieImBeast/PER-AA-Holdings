@@ -127,19 +127,23 @@ header { border-bottom: 0 !important; }
 
 /* Inner fill (hunter green) */
 .hero-fade {
-  display: block;
-  padding: 1rem 1.5rem;         /* space around the text */
+  display: inline-block;
+  padding: 1rem 1.5rem;
   border-radius: 6px;
-  background: var(--bg);        /* match page background */
-  color: inherit;
+
+  /* Black behind the words, fading vertically */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,        /* fully transparent top */
+    rgba(0,0,0,0.85) 25%,    /* fade into black */
+    rgba(0,0,0,0.85) 75%,    /* hold black behind text */
+    rgba(0,0,0,0) 100%       /* fade back out bottom */
+  );
+
+  /* Keep text pure white */
+  color: #FFFFFF;
 }
 
-.hero-sub {
-  max-width: 720px;
-  margin: 0 auto;
-  color: #FAEBD7;              /* Antique White subtext */
-  font-size: clamp(1rem, 2.2vw, 1.125rem);
-}
 
 
 
