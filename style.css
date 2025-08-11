@@ -22,8 +22,7 @@ body {
 
 /* ===== Header ===== */
 .site-header {
-  border-bottom: none;
-  
+  border-bottom: none; 
   padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
