@@ -22,7 +22,7 @@ body {
 
 /* ===== Header ===== */
 .site-header {
-  border-bottom: 1px solid var(--rule);
+  border-bottom: none;
   
   padding: 1.1rem 2rem;
   display: flex;
