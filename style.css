@@ -97,9 +97,9 @@ header { border-bottom: 0 !important; }
 
 /* ===== Hero ===== */
 .hero {
-  background: var(--bg);       /* full hunter green */
+  background: var(--bg);
   text-align: center;
-  padding: 6rem 1.25rem;       /* luxury whitespace */
+  padding: 6rem 1.25rem;
 }
 
 .hero h1 {
@@ -107,45 +107,42 @@ header { border-bottom: 0 !important; }
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.005em;
-  color: #FFFFFF;              /* pure white text */
+  color: #FFFFFF;
   margin-bottom: 0.75rem;
 }
 
-/* Gradient BORDER wrapper */
-.hero-border {
-  display: inline-block;
-  padding: 2px;                 /* border thickness */
-  border-radius: 8px;           /* outer radius */
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0)   0%,
-    rgba(0,0,0,0.85) 40%,
-    rgba(0,0,0,0.85) 60%,
-    rgba(0,0,0,0) 100%
-  );
-}
-
-/* Inner fill (hunter green) */
+/* Black in the center, fading top & bottom, behind the text */
 .hero-fade {
+  position: relative;
   display: inline-block;
   padding: 1rem 1.5rem;
   border-radius: 6px;
-
-  /* Black behind the words, fading vertically */
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,        /* fully transparent top */
-    rgba(0,0,0,0.85) 25%,    /* fade into black */
-    rgba(0,0,0,0.85) 75%,    /* hold black behind text */
-    rgba(0,0,0,0) 100%       /* fade back out bottom */
-  );
-
-  /* Keep text pure white */
   color: #FFFFFF;
 }
 
+.hero-fade::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        /* cover the padded box */
+  border-radius: 6px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0)    0%,
+    rgba(0,0,0,0.85) 35%,
+    rgba(0,0,0,0.85) 65%,
+    rgba(0,0,0,0)   100%
+  );
+  z-index: 0;
+}
 
+.hero-fade { z-index: 1; }         /* keep text above the gradient */
 
+.hero-sub {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #FAEBD7;
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+}
 
 /* ===== Sections ===== */
 .section {
