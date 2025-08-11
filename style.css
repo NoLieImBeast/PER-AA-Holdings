@@ -122,6 +122,21 @@ border-radius: 6px;
     rgba(0,0,0,0)  100%   /* transparent at bottom edge */
   );
 }
+.hero h1 { color:#FFFFFF; } /* keep pure white text */
+
+.hero-fade {
+  display: inline-block;           /* background hugs the text */
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  /* Black center, transparent top/bottom (vertical, mirrored) */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0)   0%,
+    rgba(0,0,0,0.85) 40%,
+    rgba(0,0,0,0.85) 60%,
+    rgba(0,0,0,0) 100%
+  );
+}
 
   
   border-radius: 6px;
