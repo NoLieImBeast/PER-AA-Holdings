@@ -22,13 +22,15 @@ body {
 
 /* ===== Header ===== */
 .site-header {
-  border-bottom: 1px solid var(--rule);  /* keep the thin rule as “back like this” */
+  border-bottom: 0; 
   background: var(--bg);                 /* match body so no shade mismatch */
   padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+header { border-bottom: 0 !important; }
+
 
 .brand-left {
   display: flex;
