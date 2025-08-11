@@ -118,6 +118,7 @@ header { border-bottom: 0 !important; }
   padding: 1rem 1.5rem;
   border-radius: 6px;
   color: #FFFFFF;
+  { z-index: 1; }         /* keep text above the gradient */
 }
 
 .hero-fade::before {
@@ -132,11 +133,8 @@ header { border-bottom: 0 !important; }
     rgba(0,0,0,0.85) 65%,
     rgba(0,0,0,0)   100%
   );
-  z-index: 0;
+  z-index: -1;               /* put gradient behind text */
 }
-
-.hero-fade { z-index: 1; }         /* keep text above the gradient */
-
 .hero-sub {
   max-width: 720px;
   margin: 0 auto;
