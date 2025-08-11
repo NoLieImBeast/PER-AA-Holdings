@@ -94,6 +94,7 @@ body {
 /* ===== Hero ===== */
 .hero {
   background: var(--bg);
+  border-top: 1px solid var(--bg)
   text-align: center;
   padding: 6rem 1.25rem;        /* big whitespace for “luxury” perception */
 }
