@@ -2,21 +2,21 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root{
-  --bg: #111;
-  --bg-2: #181818;
-  --text: #eee;
-  --muted: #ccc;
+  --bg: #355E3B;
+  --bg-2: #2E4F33;
+  --text: #FAEBD7;
+  --muted: #FAEBD7;
   --muted-2: #8a8a8a;
-  --accent: #00f2ff;
-  --rule: #333;
+  --accent: #B87333;
+  --rule: #2A4A30;
 }
 
 html, body { height: 100%; }
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #355E3B;
-  color: #F5F5F5;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
 }
 
@@ -94,7 +94,7 @@ body {
 
 /* ===== Hero ===== */
 .hero {
-  background: var(--bg-2);
+  background: var(--bg);
   text-align: center;
   padding: 6rem 1.25rem;        /* big whitespace for “luxury” perception */
 }
@@ -111,7 +111,7 @@ body {
 .hero-sub {
   max-width: 720px;
   margin: 0 auto;
-  color: var(--muted);
+  color: #FAEBD7;
   font-size: clamp(1rem, 2.2vw, 1.125rem);
 }
 
@@ -123,20 +123,21 @@ body {
 }
 
 .section-dark {
-  background: #2E4F33;
+  background: var(--bg-2);
 }
 
 .section h2 {
   font-size: 1.35rem;
   margin-bottom: 0.75rem;
-  color: #B87333;
+  color: var(--accent);
 }
 .button {
-  background: #B87333;
+  background: var(--accent);
   color: #000;
 }
 .button:hover {
   background: #a16128;
+}
 
 .section p {
   color: #ddd;
@@ -144,11 +145,11 @@ body {
 
 /* ===== Footer ===== */
 .site-footer {
-  background: #000;
+  background: #203C2A;
   text-align: center;
   padding: 2rem 1.25rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #B7C4B7;
 }
 
 /* ===== Responsive polish ===== */
