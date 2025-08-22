@@ -135,10 +135,10 @@ header { border-bottom: 0 !important; }
 .hero-text::before {
   content: "";
   position: absolute;
-  left: -0.5em; /* Extend to the left */
-  width: calc(100% + 1em); /* Extend to the right by same amount */
+  left: -1.25em; /* Extends bar further to the left */
+  width: calc(100% + 2.5em); /* Extends bar further to the right */
   top: 50%;
-  transform: translateY(-40%); /* Slightly lower than exact center */
+  transform: translateY(-46%); /* Keep it slightly below center for visual balance */
   height: 0.4em;
   background: linear-gradient(
     to bottom,
