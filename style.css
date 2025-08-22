@@ -138,7 +138,7 @@ header { border-bottom: 0 !important; }
   left: -0.5em; /* Extend to the left */
   width: calc(100% + 1em); /* Extend to the right by same amount */
   top: 50%;
-  transform: translateY(-46%); /* Slightly lower than exact center */
+  transform: translateY(-44%); /* Slightly lower than exact center */
   height: 0.4em;
   background: linear-gradient(
     to bottom,
