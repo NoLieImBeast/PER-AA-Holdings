@@ -115,12 +115,13 @@ header { border-bottom: 0 !important; }
 .hero-fade {
   position: relative;
   display: inline-block;
-  padding: 1rem 1.5rem;
+  padding: 3rem 2rem;  /* was 1rem 1.5rem — now more vertical space */
   border-radius: 6px;
   color: #FFFFFF;
-  z-index: 1;           /* Bring this element above default stacking */
-  overflow: hidden;     /* Contain the pseudo element */
+  z-index: 1;
+  overflow: hidden;
 }
+
 
 .hero-fade::before {
   content: "";
