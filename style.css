@@ -121,9 +121,10 @@ header { border-bottom: 0 !important; }
   font-size: clamp(2rem, 5vw, 3rem);
   font-family: 'Libre Baskerville', serif;
   display: inline-block;
-  padding: 0;           /* Remove padding to fix alignment */
-  line-height: 1.2;     /* Control vertical spacing */
+  padding: 0.1em 1.25em;  /* Increase horizontal padding */
+  line-height: 1.2;
 }
+
 .hero-fade {
   position: relative;
   display: inline-block;
