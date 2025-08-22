@@ -135,10 +135,9 @@ header { border-bottom: 0 !important; }
   content: "";
   position: absolute;
   left: 0;
-  top: 0;               /* Start at top */
-  bottom: 0;            /* Stretch to bottom */
-  margin: auto 0;       /* Vertically center */
-  height: 0.4em;        /* Size of black bar */
+  top: 50%;
+  transform: translateY(-48%); /* Slightly lower than exact center */
+  height: 0.4em;
   width: 100%;
   background: linear-gradient(
     to bottom,
@@ -150,6 +149,7 @@ header { border-bottom: 0 !important; }
   border-radius: 4px;
   pointer-events: none;
 }
+
 
 
 
