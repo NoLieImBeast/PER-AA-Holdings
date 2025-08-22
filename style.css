@@ -134,11 +134,11 @@ header { border-bottom: 0 !important; }
 .hero-text::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -0.5em; /* Extend to the left */
+  width: calc(100% + 1em); /* Extend to the right by same amount */
   top: 50%;
-  transform: translateY(-48%); /* Slightly lower than exact center */
+  transform: translateY(-46%); /* Slightly lower than exact center */
   height: 0.4em;
-  width: 100%;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
